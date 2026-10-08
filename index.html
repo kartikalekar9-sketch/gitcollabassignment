@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cartly Store</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="logo">Cartly </div>
+  <button class="cartbtn" id="open">Cart<b id="count">0</b></button>
+</header>
+
+<section class="hero">
+  <h1>Everyday things, easy to buy.</h1>
+  <p>Browse the shop, add items to your cart, and check out in a few clicks.</p>
+</section>
+
+<div class="bar">
+  <div id="chips"></div>
+  <input id="q" type="search" placeholder="Search products" aria-label="Search products">
+</div>
+
+<div class="grid" id="grid"></div>
+
+<div class="veil" id="veil"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart">
+  <div class="dh"><h2>Your cart</h2><button class="x" id="close" aria-label="Close cart">✕</button></div>
+  <div class="items" id="items"></div>
+  <div class="foot">
+    <div class="total"><span>Total</span><span id="total">$0.00</span></div>
+    <button class="pay" id="pay">Checkout</button>
+  </div>
+</aside>
+
+<script src="js/app.js"></script>
+</body>
+</html>
